@@ -1,0 +1,14 @@
+
+
+@mixin alpha-on-hover($normal-opacity: 0.5, $hover-opacity: 1) {
+  opacity: $normal-opacity;
+  &:hover {
+    opacity: $hover-opacity;
+  }
+}
+
+@mixin shadow-on-hover($colour: black, $spread: 5px, $offsetX: 0px, $offsetY: 0px) {
+  &:hover {
+    box-shadow: $offsetX $offsetY $spread $colour;
+  }
+}

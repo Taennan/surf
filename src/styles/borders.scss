@@ -1,0 +1,6 @@
+
+
+@mixin border($thickness: 2px, $radius: 20px) {
+  border: $thickness solid black;
+  border-radius: $radius;
+}

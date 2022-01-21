@@ -1,0 +1,13 @@
+
+@use "styles/colours.scss";
+@use "styles/borders.scss";
+
+@mixin card {
+
+  @include borders.border($radius: 15px);
+
+  padding: 10px;
+
+  @include colours.shadow-on-hover;
+
+}

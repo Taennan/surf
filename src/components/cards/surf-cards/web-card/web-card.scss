@@ -1,0 +1,8 @@
+
+@use "../../card.scss";
+
+.WebCard {
+
+  @include card.card;
+  
+}

@@ -1,0 +1,100 @@
+{
+
+    "imageList": [
+        "lock/lock-0.svg",
+        "unlock/unlock-0.svg",
+        "star.svg",
+        "mag-glass.svg",
+        "menu.svg"
+    ],
+
+    "images": {
+        "lock": {
+            "type": "image/svg",
+            "sources": [
+                {
+                    "srcset": "resources/images/lock/lock-0.svg",
+                    "media":  "(min-width: 1px)"
+                },
+                {
+                    "srcset": "resources/images/lock/lock-1.svg",
+                    "media":  "(min-width: 1px)"
+                }
+            ],
+            "fallback": {
+                "src": "",
+                "alt": "HTTPS (Secure Site)"
+            }
+        },
+        "unlock": {
+            "type": "image/svg",
+            "sources": [
+                {
+                    "srcset": "resources/images/unlock/unlock-0.svg",
+                    "media":  "(min-width: 1px)"
+                },
+                {
+                    "srcset": "resources/images/unlock/unlock-1.svg",
+                    "media":  "(min-width: 1px)"
+                }
+            ],
+            "fallback": {
+                "src": "",
+                "alt": "HTTP (Insecure Site)"
+            }
+        },
+        "star": {
+            "type": "image/svg",
+            "sources": [
+                {
+                    "srcset": "resources/images/star.svg",
+                    "media":  "(min-width: 1px)"
+                }
+            ],
+            "fallback": {
+                "src": "",
+                "alt": "Favourite Site"
+            }
+        },
+        "menu": {
+            "type": "image/svg",
+            "sources": [
+                {
+                    "srcset": "resources/images/menu-button.svg",
+                    "media":  "(min-width: 1px)"
+                }
+            ],
+            "fallback": {
+                "src": "resources/images/menu-button.svg",
+                "alt": "Menu"
+            }
+        },
+        "magGlass": {
+            "type": "image/svg",
+            "sources": [
+                {
+                    "srcset": "resources/images/magnifying-glass.svg",
+                    "media":  "(min-width: 1px)"
+                }
+            ],
+            "fallback": {
+                "src": "",
+                "alt": "Search"
+            }
+        }
+    },
+
+    "videos": {
+        "example": [
+            {
+                "src":  "some-video.webm",
+                "type": "video/webm"
+            },
+            {
+                "src":  "some-other-video.ogg",
+                "type": "video/ogg"
+            }
+        ]
+    }
+
+}

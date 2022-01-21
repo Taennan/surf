@@ -1,0 +1,18 @@
+
+@import "resources/fonts/font-faces.scss";
+
+* {
+  font-family: robotoregular, sans-serif;
+}
+
+svg,
+img {
+
+  $img-size: 20px;
+  width:  $img-size;
+  height: $img-size;
+
+  background-color: green;
+
+  border-radius: $img-size * 0.2;
+}

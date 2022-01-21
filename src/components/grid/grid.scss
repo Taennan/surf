@@ -1,0 +1,51 @@
+
+@use "styles/media-sizes.scss";
+
+.Grid {
+
+  margin-block-start: 15px;
+
+  .InfiniteScroll {
+
+    section {
+      width: 50%;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    > main {
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      $grid-spacing: 5%;
+      column-gap: $grid-spacing;
+      row-gap:    $grid-spacing;
+
+      // Mobile
+      @media (max-width: media-sizes.$mobile) {
+        grid-template-columns: 70%;
+      }
+      // Tablet
+      @media (max-width: media-sizes.$tablet) {
+          grid-template-columns: 1fr 1fr;
+      }
+      // Desktop
+      @media (min-width: media-sizes.$tablet + 1px) {
+          grid-template-columns: 1fr 1fr;
+      }
+
+
+    }
+
+    > footer {
+
+      text-align: center;
+
+    }
+
+  }
+
+
+}

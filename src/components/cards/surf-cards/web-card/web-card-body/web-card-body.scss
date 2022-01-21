@@ -1,0 +1,19 @@
+
+.WebCardBody {
+
+  display: block;
+
+  .CardDescription {
+    width: 100%;
+  }
+
+  ul {
+
+    height: 0;
+    margin: 0;
+
+    display: flex;
+    flex: space-between;
+  }
+
+}

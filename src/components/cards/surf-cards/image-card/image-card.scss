@@ -1,0 +1,53 @@
+
+@use "styles/sizing.scss";
+@use "styles/colours.scss";
+@use "styles/borders.scss";
+@use "../../card.scss";
+
+.ImageCard {
+
+  @include card.card;
+
+  position: relative;
+
+  .CardHeader {
+
+    position: absolute;
+
+    opacity: 0;
+
+  }
+  &:hover .CardHeader {
+
+    opacity: 1;
+
+    // When the user hovers over the header, changes the
+    // background colour so that the text can be seen
+    background-color: white;
+
+  }
+
+  main {
+
+    > img {
+
+      @include borders.border(0px, 10px);
+
+      @include sizing.size(100%, 125px);
+
+      display: block;
+
+      // This is just so that the img size can be seen,
+      // delete when no longer needed
+      background-color: green;
+    }
+
+  }
+
+
+
+  .Picture img {
+    background-color: green;
+  }
+
+}

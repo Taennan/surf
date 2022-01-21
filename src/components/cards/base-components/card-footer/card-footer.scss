@@ -1,0 +1,32 @@
+
+@use "styles/sizing.scss";
+
+.CardFooter {
+
+  margin-block-start: 3px;
+
+  ul {
+
+    padding: 0;
+
+    display: inline;
+    width: 10%;
+
+    list-style-type: none;
+
+    li {
+
+      @include sizing.square(0px);
+
+    }
+
+    img,
+    svg {
+
+      border-radius: 5px;
+      background-color: gray;
+
+    }
+
+  }
+}

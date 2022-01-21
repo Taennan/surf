@@ -1,0 +1,44 @@
+
+.SearchBar {
+
+  margin-inline-start: 8%;
+  margin-block-start: 2%;
+
+  width: 70%;
+
+  border: 1px solid black;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+
+  input {
+
+    width: 100%;
+
+    outline: none;
+    border:  none;
+    background-color: transparent;
+
+  }
+
+  svg,
+  img {
+
+    $img-size: 20px;
+    $img-margin: $img-size * 0.25;
+
+    margin: $img-margin;
+
+    width:  $img-size;
+    height: $img-size;
+
+    opacity: 0.5;
+    background-color: transparent;
+
+    :hover {
+      opacity: 1;
+    }
+  }
+
+}

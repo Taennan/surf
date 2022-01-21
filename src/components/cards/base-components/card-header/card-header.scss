@@ -1,0 +1,28 @@
+
+.CardHeader {
+
+  a {
+    text-decoration: none;
+  }
+  .CardUrl {
+    margin: 0;
+  }
+
+  img,
+  svg {
+
+    float: left;
+    margin-block-start: 3px;
+    margin-inline-end:  3px;
+
+  }
+
+  .CardTitle {
+    margin: 0;
+    color: black;
+  }
+  .CardTitle:hover {
+    text-decoration: underline;
+  }
+  
+}

@@ -1,0 +1,35 @@
+
+@use "styles/borders.scss";
+@use "styles/positioning.scss";
+@use "styles/colours.scss";
+@use "styles/sizing.scss";
+
+//.PageHeader.position-absolute { position: absolute; }
+.PageHeader.position-sticky   { position: sticky; }
+
+.PageHeader {
+
+  @include positioning.centered;
+  @include borders.border;
+
+  width: 50%;
+
+  div.flex-div {
+    display: flex;
+  }
+
+  svg,
+  img {
+
+    //@include positioning.centered("v");
+    margin-block-start: auto;
+    margin-inline-start: 5%;
+
+    @include sizing.square(2em);
+
+    @include colours.alpha-on-hover;
+    background-color: transparent;
+
+  }
+
+}

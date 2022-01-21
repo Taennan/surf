@@ -1,0 +1,16 @@
+
+@mixin centered($horizontal-or-vertical: "h") {
+
+  @if $horizontal-or-vertical == "h" {
+    margin-inline-start: auto;
+    margin-inline-end:   auto;
+
+  } @else if $horizontal-or-vertical == "v" {
+    margin-block-start: auto;
+    margin-block-end:   auto;
+
+  } @else {
+    @error "Expected 'h' or 'v' as args for centered mixin, got #{$horizontal-or-vertical}";
+  }
+
+}

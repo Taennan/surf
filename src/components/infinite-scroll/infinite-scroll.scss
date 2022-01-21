@@ -1,0 +1,31 @@
+
+@use "styles/sizing.scss";
+@use "styles/positioning.scss";
+
+.InfiniteScroll {
+
+  main {
+
+    @include positioning.centered("h");
+
+    width: 70%;
+
+    > ul {
+
+      margin: 0;
+
+      padding: 0;
+
+      list-style-type: none;
+
+      li {
+
+        margin-block-end: 10px;
+
+      }
+
+    }
+
+  }
+
+}

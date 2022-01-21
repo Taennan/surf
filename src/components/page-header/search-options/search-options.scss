@@ -1,0 +1,48 @@
+
+@import "../../../styles/buttons.scss";
+
+.SearchOptions {
+
+  $vertical-spacing:   0.3em;
+  margin-block-start: $vertical-spacing;
+  margin-block-end:   $vertical-spacing;
+
+  margin-inline-start: auto;
+  margin-inline-end:   auto;
+  justify-content: center;
+
+  padding: 0;
+
+  display: flex;
+
+  list-style-type: none;
+
+  li {
+
+    $horizontal-spacing: 1em;
+    padding-inline-start: $horizontal-spacing;
+    padding-inline-end:   $horizontal-spacing;
+
+    cursor: pointer;
+
+    color: $inactive-color;
+
+  }
+
+  li:hover {
+    color: $hover-color;
+    text-decoration: $hover-text-decor;
+  }
+  li:active {
+    color: $active-color;
+    text-decoration: $active-text-decor;
+  }
+
+  li.active-button {
+    color: $active-color;
+    text-decoration: none;
+
+    cursor: default;
+  }
+
+}
